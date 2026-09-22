@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sơ đồ tổ chức hệ thống tài chính Việt Nam</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#eef6ff;color:#17324d}
+header{padding:32px 20px;text-align:center;color:white;background:#145a9c}
+header h1{margin:0;font-size:32px}header p{margin:10px 0 0}
+.wrap{max-width:1400px;margin:25px auto;padding:0 18px}.box,.section{background:white;border-radius:18px;padding:20px;box-shadow:0 5px 18px #00000012;margin-bottom:20px}
+.top{display:grid;grid-template-columns:1fr 1fr;gap:20px}.box h2,.section-title{color:#145a9c;margin-top:0}
+.arrow{text-align:center;font-size:30px;color:#2879b9}
+.main{display:grid;grid-template-columns:1.25fr .9fr;gap:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card,.market-card{padding:16px;border-radius:14px;border:1px solid #cddfed;cursor:pointer;transition:.2s}
+.card:hover,.market-card:hover{transform:translateY(-3px);box-shadow:0 8px 18px #145a9c22}
+.card h3,.market-card h3{margin:0 0 8px;font-size:17px}.card p,.market-card p{margin:0;line-height:1.5;font-size:14px}
+.bank{background:#edf6ff}.policy{background:#fff5e8}.finance{background:#f4efff}.insurance{background:#edfbf7}.fund{background:#fff0f5}.other{background:#f3f6f8}
+.market{display:grid;gap:12px}.market-card{background:#f8fbff}
+.support{text-align:center}.tag{display:inline-block;background:#eef5ff;border:1px solid #cfe1f3;padding:9px 13px;border-radius:30px;margin:4px;font-size:13px}
+footer{text-align:center;padding:25px;color:#63788c;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:#08233a99;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}
+.modal-content{background:white;max-width:650px;width:100%;padding:25px;border-radius:18px}.close{float:right;border:0;border-radius:50%;width:34px;height:34px;font-size:20px}
+@media(max-width:950px){.main,.top{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.cards{grid-template-columns:1fr}header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header><h1>SƠ ĐỒ TỔ CHỨC HỆ THỐNG TÀI CHÍNH VIỆT NAM</h1><p>Cơ quan quản lý – tổ chức tài chính – thị trường tài chính</p></header>
+<div class="wrap">
+<div class="box"><b>Cách sử dụng:</b> Nhấn vào từng ô để xem giải thích. Sơ đồ được thiết kế phục vụ học tập môn <b>Tài chính – Tiền tệ</b>.</div>
+
+<div class="top">
+<div class="box"><h2>🏛️ Cơ quan quản lý nhà nước</h2><ul>
+<li>Quốc hội: xây dựng và ban hành pháp luật.</li>
+<li>Chính phủ: quản lý và điều hành kinh tế vĩ mô.</li>
+<li>Bộ Tài chính: quản lý các lĩnh vực tài chính thuộc phạm vi chức năng.</li>
+<li>Ngân hàng Nhà nước Việt Nam: quản lý tiền tệ, ngân hàng và ngoại hối theo chức năng.</li>
+</ul></div>
+<div class="box"><h2>🔗 Các yếu tố phối hợp</h2><ul>
+<li>Cơ quan quản lý chuyên ngành và giám sát.</li>
+<li>Khung pháp lý và cơ chế công bố thông tin.</li>
+<li>Hạ tầng thanh toán và giao dịch.</li>
+<li>Công nghệ và nguồn nhân lực tài chính.</li>
+</ul></div>
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="main">
+<section class="section"><h2 class="section-title">🏦 CÁC TỔ CHỨC TÀI CHÍNH</h2><div class="cards">
+<div class="card bank" data-title="Ngân hàng thương mại" data-text="Huy động tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán và các dịch vụ ngân hàng khác."><h3>🏦 Ngân hàng thương mại</h3><p>Huy động tiền gửi, cho vay, thanh toán và dịch vụ ngân hàng.</p></div>
+<div class="card policy" data-title="Ngân hàng chính sách" data-text="Thực hiện các chương trình tín dụng phục vụ mục tiêu chính sách và phát triển kinh tế – xã hội theo quy định."><h3>🏛️ Ngân hàng chính sách</h3><p>Thực hiện tín dụng chính sách và hỗ trợ các đối tượng ưu tiên.</p></div>
+<div class="card finance" data-title="Công ty tài chính và cho thuê tài chính" data-text="Cung cấp tín dụng và dịch vụ tài chính chuyên biệt trong phạm vi pháp luật cho phép."><h3>💳 Công ty tài chính</h3><p>Cấp tín dụng và cung cấp dịch vụ tài chính chuyên biệt.</p></div>
+<div class="card insurance" data-title="Công ty bảo hiểm" data-text="Cung cấp sản phẩm bảo hiểm nhằm chuyển giao và phân tán rủi ro."><h3>🛡️ Công ty bảo hiểm</h3><p>Bảo hiểm nhân thọ và phi nhân thọ.</p></div>
+<div class="card fund" data-title="Quỹ đầu tư và quản lý tài sản" data-text="Huy động và quản lý vốn đầu tư vào các tài sản tài chính theo chiến lược của quỹ."><h3>📈 Quỹ đầu tư</h3><p>Quản lý vốn và đầu tư vào cổ phiếu, trái phiếu...</p></div>
+<div class="card other" data-title="Tổ chức tài chính phi ngân hàng khác" data-text="Bao gồm các chủ thể như công ty chứng khoán, công ty quản lý quỹ và các tổ chức cung cấp dịch vụ tài chính chuyên biệt."><h3>🏢 Tổ chức tài chính khác</h3><p>Công ty chứng khoán, quản lý quỹ và tổ chức chuyên biệt.</p></div>
+</div></section>
+
+<section class="section"><h2 class="section-title">📊 THỊ TRƯỜNG TÀI CHÍNH</h2><div class="market">
+<div class="market-card" data-title="Thị trường tiền tệ" data-text="Nơi diễn ra các giao dịch vốn ngắn hạn, bao gồm thị trường liên ngân hàng và các công cụ thị trường tiền tệ."><h3>💵 Thị trường tiền tệ</h3><p>Vốn ngắn hạn và các công cụ tiền tệ.</p></div>
+<div class="market-card" data-title="Thị trường vốn" data-text="Thị trường huy động và phân bổ nguồn vốn trung và dài hạn."><h3>📈 Thị trường vốn</h3><p>Trái phiếu, cổ phiếu và các nguồn vốn dài hạn.</p></div>
+<div class="market-card" data-title="Thị trường chứng khoán" data-text="Bao gồm phát hành, niêm yết và giao dịch các loại chứng khoán theo quy định."><h3>📜 Thị trường chứng khoán</h3><p>Cổ phiếu, trái phiếu và chứng khoán phái sinh.</p></div>
+<div class="market-card" data-title="Thị trường bảo hiểm" data-text="Nơi cung cấp và phân phối sản phẩm bảo hiểm, giúp các chủ thể quản lý rủi ro."><h3>🛡️ Thị trường bảo hiểm</h3><p>Bảo hiểm nhân thọ và phi nhân thọ.</p></div>
+<div class="market-card" data-title="Tài chính số và tài chính xanh" data-text="Các xu hướng mới gồm ngân hàng số, công nghệ tài chính, thanh toán điện tử và tài chính xanh."><h3>🌱 Tài chính số & xanh</h3><p>Ngân hàng số, công nghệ tài chính và tài chính xanh.</p></div>
+</div></section>
+</div>
+
+<div class="box support"><h2>⚙️ CÁC YẾU TỐ HỖ TRỢ</h2>
+<span class="tag">Hạ tầng tài chính</span><span class="tag">Công nghệ & chuyển đổi số</span><span class="tag">Nguồn nhân lực</span><span class="tag">Khung pháp lý</span><span class="tag">Quản trị rủi ro</span><span class="tag">Hội nhập quốc tế</span></div>
+</div>
+<footer>Sơ đồ học tập môn Tài chính – Tiền tệ | Có thể chỉnh sửa theo giáo trình và yêu cầu của giảng viên.</footer>
+
+<div class="modal" id="modal"><div class="modal-content"><button class="close" id="close">×</button><h2 id="title"></h2><p id="text" style="line-height:1.7"></p></div></div>
+<script>
+const modal=document.getElementById('modal'),title=document.getElementById('title'),text=document.getElementById('text');
+document.querySelectorAll('.card,.market-card').forEach(x=>x.onclick=()=>{title.textContent=x.dataset.title;text.textContent=x.dataset.text;modal.classList.add('show')});
+document.getElementById('close').onclick=()=>modal.classList.remove('show');
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove('show')};
+</script>
+</body></html>
